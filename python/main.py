@@ -1,0 +1,3 @@
+import comands
+
+comands.run()
