@@ -1,0 +1,3 @@
+from comands import *
+
+run()
