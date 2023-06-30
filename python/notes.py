@@ -5,8 +5,15 @@ def get_notes():
     id = chek_id()
     head = input(("Введите заголовок "))
     body = input("Введите тело заметки ")
-    date = datetime.datetime.now().strftime("%d-%m-%y\t%H:%M:%S")
-    return {"id": id, "head": head, "body": body, "date": date}
+    date = datetime.datetime.now().strftime("%d-%m-%y  %H:%M:%S")
+    return {"id": id, "date": date , "head": head, "body": body}
+
+def get_notes_id(new_id):
+    id = new_id
+    head = input(("Введите заголовок "))
+    body = input("Введите тело заметки ")
+    date = datetime.datetime.now().strftime("%d-%m-%y  %H:%M:%S")
+    return {"id": id, "date": date , "head": head, "body": body}
 
 def chek_id():
     id = 0
